@@ -2,13 +2,13 @@ version: "3"
 
 services:
     nginx:
-        image: course-nginx
+        image: vlad1337/docker-course:nginx_v1
         build:
             context: .
             dockerfile: ./docker/nginx/Dockerfile.production
             
     php:
-        image: course-php
+        image: vlad1337/docker-course:php_v1
         build:
             context: .
             dockerfile: ./docker/php/Dockerfile.production
