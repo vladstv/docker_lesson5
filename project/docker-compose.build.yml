@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    nginx:
+        image: course-nginx
+        build:
+            context: .
+            dockerfile: ./docker/nginx/Dockerfile.production
+            
+    php:
+        image: course-php
+        build:
+            context: .
+            dockerfile: ./docker/php/Dockerfile.production
