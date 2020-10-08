@@ -2,8 +2,8 @@ version: "3"
 
 services:
     nginx:
-        image: vlad1337/docker-course:nginx-v1
+        image: vlad1337/docker-course:nginx-v2
         ports:
             - 80:80
     php:
-        image: vlad1337/docker-course:php-v1
+        image: vlad1337/docker-course:php-v2
